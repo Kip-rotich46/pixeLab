@@ -6,6 +6,7 @@
     --dark-color: #8a898e;
     --light-color: lightcoral;
     --hover-color:crimson;
+    --lighter-color:#D3D3D3;
 }
 
 *{
@@ -18,7 +19,7 @@
 }
 
 /*Header*/
-header {
+header {       
     width: 100%;
     height: 65px;
     padding: 50px 100px 10px 100px;
@@ -82,6 +83,7 @@ header .sign-buttons .login:hover{
 header .sign-buttons .signup:hover{
     background: var(--hover-color);
 }
+
 
 /*main*/
 main{
@@ -245,6 +247,116 @@ main .hero{
     background:var(--hover-color)
 }
 
+/* Testimonials*/
+.service .testimonials .tcard-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 100%;
+    gap: 50px;
+    padding: 50px;
+}
+
+.service .testimonials .tcard-container .tcard{
+    display: flex;
+    width: 35%;
+    gap: 30px;
+    height: 150px;
+}
+
+.service .testimonials .tcard-container .tcard .image{
+    display: flex;
+    width: 60px;
+    height:60px;
+}
+
+.service .testimonials .tcard-container .tcard .words{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+}
+
+.service .testimonials .tcard-container .tcard .words p.name{
+    margin-top: 20px;
+    bottom: 0;
+    color: #E0E0E0;
+    text-transform: uppercase;
+}
+
+/*Team*/
+.team{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.team h2{
+    font-size:40px;
+    font: bold;
+}
+
+.team p{
+    text-transform: uppercase;
+    color: var(--lighter-color);
+}
+
+.team .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.team .container .card{
+    width: 30%;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.team .container .card .image{
+    width: 100px;
+    height: 100px;
+}
+
+.team .container .card p{
+    color: var(--lighter-color);
+    text-transform: uppercase;
+}
+
+.team .container .card p.name{
+    color: black;
+    text-transform: capitalize;
+}
+
+.team .container .card .icons{
+    width: 100%;
+    border-top: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.team .container .card .icons i{
+    width: 30%;
+    padding: 15px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    border-right: 2px solid var(--secondary-color);
+}
+
+.team .container .card .icons i:nth-child(3){
+    border-right: none;
+}
 /*Utilities*/
 img {
     width: 100%;
