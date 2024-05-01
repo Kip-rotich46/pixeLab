@@ -296,6 +296,7 @@ main .hero{
 .team h2{
     font-size:40px;
     font: bold;
+    margin-top: 30px;
 }
 
 .team p{
@@ -357,6 +358,61 @@ main .hero{
 .team .container .card .icons i:nth-child(3){
     border-right: none;
 }
+
+.team .news{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.team .news .image{
+    width: 35%
+}
+
+.team .in{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team .news .image img{
+    width: 100%;
+}
+
+.team .in input, .news .in button{
+    width: 100%;
+}
+
+input{
+    height: 40px;
+    box-shadow: 5px 5px 15px 5px var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fff;
+}
+
+.news .in button{
+    background-color: var(--primary-color);
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/*footer*/
+footer header{
+    height: 40px;
+}
+footer header .menu ul, footer header .menu ul li, footer header .menu ul li a {
+    text-decoration: none;
+    border: none;
+    background: var(--dark-color);
+    color: black;
+}
+
 /*Utilities*/
 img {
     width: 100%;
